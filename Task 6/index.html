@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form that allows only excel files</title>
+</head>
+
+<body>
+    <div style="border: 1px solid black;">
+        <h1 style="text-align: center;">Allow Only if Excel</h1>
+        <hr>
+
+        <form style="padding: 1rem;">
+            <div>
+                <label for="excel">Select Excel File:</label>
+                <input type="file" id="excel" accept="excel">
+            </div>
+            <button type="submit" id="upload">Upload</button>
+            <p id="result"></p>
+            <span>Type:</span><span id="type"></span>
+        </form>
+    </div>
+</body>
+
+<script>
+    document.getElementById("excel").addEventListener("change", function (e) {
+    
+        const file = e.target.files[0];
+        if (!file) return;
+        
+        const fileType = file.type;
+        const fileName = file.name.toLowerCase();
+        const allowed = [".xls", ".xlsx"];
+    
+        const excel = allowed.some(ext => fileName.endsWith(ext));
+    
+        if (excel) {
+            document.getElementById("result").innerText = "File is Excel";
+            document.getElementById("type").innerText = file.name;
+        } else {
+            document.getElementById("result").innerText = "File is NOT Excel";
+            document.getElementById("type").innerText = "";
+            e.target.value = ""; 
+        }
+    });
+    </script>
+    
+    
+</html>

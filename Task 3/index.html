@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        .invoice,.invoice td, .invoice th{
+            border: 2px solid;
+        }
+        .invoice {
+            border-collapse: collapse;
+            width: 47rem;
+            margin-right: 1rem;
+        }
+        thead > tr > td {
+            text-align: left;
+        }
+        tbody > tr > td{
+            height: 1rem;
+        }
+        td{
+            width: 12rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="tables" style="height: 100vh; width: 100%;">
+        <div class="invoice-table" style="height: 20rem; width: 100%;">
+            <div style="margin: auto;">
+                <p style="text-align: center; transform: translateY(3rem); font-weight: 300; color:gray;">Invoice</p>
+            </div>
+            <table class="invoice" style="margin: auto; margin-top: 3rem; border: 2px solid blue">
+                <thead>
+                    <tr>
+                        <td style="background-color: #dddddd;"><span style="color: red;">item/ Desc.</span></td>
+                        <td style="background-color: #dddddd;"><span style="color: red;">Qty.</span></td>
+                        <td style="background-color: #dddddd;"><span style="color: red;">@</span></td>
+                        <td style="background-color: #dddddd;"><span style="color: red;">Price</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paperclips (Box)</td>
+                        <td>100</td>
+                        <td>1.15</td>
+                        <td>115.00</td>
+                    </tr>
+                    <tr>
+                        <td>Paper (case)</td>
+                        <td>10</td>
+                        <td>45.99</td>
+                        <td>459.90</td>
+                    </tr>
+                    <tr>
+                        <td>Wasterpaper Baskets</td>
+                        <td>2</td>
+                        <td>17.99</td>
+                        <td>35.98</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="background-color: #dddddd;"><span style="font-weight: bold;">Subtotal</span></td>
+                        <td>610.88</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="background-color: #dddddd;"><span style="font-weight: bold;">Tax</span></td>
+                        <td>7%</td>
+                        <td>42.76</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="background-color: #dddddd;"><span style="font-weight: bold;">Total</span></td>
+                            <td>653.64</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="schedule">
+            <div style="margin: auto;">
+                <p style="text-align: center; transform: translateY(1rem); font-weight: 300; color:gray;">Ians's titme-table</p>
+            </div>
+            <table class="time-table" border="1" style="border-color: blue; margin-top: 3rem; width: 60%; text-align: center; margin: auto;">
+                  <thead>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td colspan="3">Morning</td>
+                        <td>Lunch</td>
+                        <td colspan="4">afternoon</td>
+                        <td colspan="3">evening</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td></td>
+                        
+                        <td></td>
+                        <td>9-10 <br>am</td>
+                        <td>10-11 <br>am</td>
+                        <td>11-12 <br>am</td>
+                        <td>1-2 <br>pm</td>
+                        <td>2-3 <br>pm</td>
+                        <td>3-4 <br>pm</td>
+                        <td>4-5 <br>pm</td>
+                        <td>5-6 <br>pm</td>
+                        <td>6-7 pm</td>
+                        <td>7-8 pm</td>
+                        <td>8-9 pm</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Work</td>
+                        <td>Monday <br></td>
+                        <td>Develop meeting</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="3">Client Meeting</td>
+                        <td>Commute</td>
+                        <td colspan="3">Free</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td colspan="3">in Office</td>
+                        <td></td>
+                        <td colspan="7">in Office</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Lecture</td>
+                        <td>Wednesday</td>
+                        <td colspan="3">CSC205</td>
+                        <td></td>
+                        <td colspan="7">Preparation</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td colspan="3">MAM200</td>
+                        <td></td>
+                        <td colspan="3">Tutorials for MAM200</td>
+                        <td colspan="4">Free</td>
+                    </tr>
+                    <tr>
+                        <td>Research</td>
+                        <td>Friday</td>
+                        <td colspan="3">Research</td>
+                        <td></td>
+                        <td colspan="7">Research</td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

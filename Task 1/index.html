@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body style="font-size: .8rem;">
+    <form class="form" style="height: 50rem; width: 90%; background-color: #f2f2f2; margin: auto; margin-top: .1rem;">
+        <div class="form-body" style="margin-left: auto; height: fit-content; width: 15%; padding-top: .2rem; margin-right: 2rem;">
+            <p>
+                <a href="#" style="color: #a4634f;">Student Registration Form</a></p>
+        </div>
+        <div class="form-fields">
+
+            <div class="fname" style="display: flex; margin-bottom: .8rem;">
+               <span style="padding-top: .4rem; padding-left: 1rem;">First Name:</span> 
+               <input type="text" placeholder="Enter your first name" id="fname" 
+               style="height: 1.5rem; width: 72%; margin-left: 3rem; padding-left: .7rem;" required autofocus>
+            </div>
+
+            <div class="lname" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Last Name:</span> 
+                <input type="text" placeholder="Enter your last name" id="lname" 
+                style="height: 1.5rem; width: 72%; margin-left: 3rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="email" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Email:</span> 
+                <input type="email" placeholder="it should be contain @" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                style="height: 1.5rem; width: 72%; margin-left: 4.6rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="phone-number" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Mobile:</span> 
+                <input type="number" placeholder="only 10 digits are allowed" id="phone-number" pattern="[0-9]{10}"
+                style="height: 1.5rem; width: 72%; margin-left: 4.2rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="gender" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Gender:</span>
+                <label style="height: 1rem; width: 10%; margin-left: 3.8rem; padding-left: 0rem;">
+                    <input type="radio" name="type" value="male" id="male" required>
+                    Male
+                </label> 
+                <label style="height: 1rem; width: 10%; margin-left: -3rem; padding-left: 0rem;">
+                    <input type="radio" name="type" value="female" id="female">
+                    Female
+                </label> 
+             </div>
+
+             <div class="birth-date" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Date Of Birth:</span> 
+                <input type="date" id="birth" 
+                style="height: 1.5rem; width: 72%; margin-left: 2.1rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="address" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Address:</span> 
+                <textarea name="address" id="address" cols="115" rows="10" style="margin-left: 3.8rem; padding-left: .7rem;" required></textarea>
+             </div>
+
+             <div class="city" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">City:</span> 
+                <input type="text" id="city" 
+                style="height: 1.5rem; width: 72%; margin-left: 4.9rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="pin" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Area PIN:</span> 
+                <input type="number" id="pin" 
+                style="height: 1.5rem; width: 72%; margin-left: 3.2rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="state" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">State:</span> 
+                <input type="text" id="state" 
+                style="height: 1.5rem; width: 72%; margin-left: 4.6rem; padding-left: .7rem;" required>
+             </div>
+
+             <div class="qualification" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Qualification:</span>
+                <select name="qualification" id="qualification" style="height: 1.3rem; margin-left: 2rem; padding-left: .2rem;" required>
+                    <option value="">B.Tech</option>
+                    <option value="">B.Sc</option>
+                </select> 
+             </div>
+
+             <div class="specialization" style="margin-bottom: .8rem; display: flex;">
+                <div>
+                <span style="padding-top: .4rem; padding-left: 1rem;">specialization:</span>
+                </div>
+                <div class="fields" style="margin-left: 1.5rem;">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required>
+                 <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" required>
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" required>
+                <label for="vehicle3"> I have a boat</label><br>  
+            </div>
+             </div>
+
+             <div class="state" style="display: flex; margin-bottom: .8rem;">
+                <span style="padding-top: .4rem; padding-left: 1rem;">Password:</span> 
+                <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*_=+-]).{8,}" 
+                style="height: 1.5rem; width: 72%; margin-left: 3rem; padding-left: .7rem;" required>
+             </div>
+        </div>
+        <div class="submit">
+            <button id="submit" style="cursor: pointer; color: #c8ecd0; background-color: #107502; padding: .5rem; border-radius: .2rem; margin-left: .7rem;">Register</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("submit").addEventListener("click",()=>{
+            let fName = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let email = document.getElementById("email").value;
+            let phoneNumber = document.getElementById("phone-number").value;
+            let male = document.getElementById("male").value;
+            let female = document.getElementById("female").value;
+            let birth = document.getElementById("birth").value;
+            let address = document.getElementById("address").value;
+            let city = document.getElementById("city").value;
+            let pin = document.getElementById("pin").value;
+            let state = document.getElementById("state").value;
+            let que = document.getElementById("qualification").value;
+            let spe = document.getElementById("vehicle1").value;
+            let pass = document.getElementById("password").value;
+
+            if(fname === "" || lname === "" || email  === "" || phoneNumber === "" || male === "" || birth === "" ||
+            address === "" || city === "" || pin === "" || state === "" || que === "" || spe === "" || pass === ""){
+                alert("Fill all the fields of the form !");
+                return false;
+            }
+            else {
+                alert("Form Submitted");
+            }
+        });
+    </script>
+</body>
+</html>
