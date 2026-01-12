@@ -1,0 +1,525 @@
+.main-header {
+    width: 100%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo img {
+    height: 80px;
+    width: 90px;
+    padding-left: 6rem;
+}
+
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav-menu i {
+    font-size: 0.7rem;
+}
+
+.contact-btn {
+    background: #0b5a8c;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.3rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-menu li:hover a {
+    color: #0b5a8c;
+}
+
+.contact-btn:hover {
+    background: #08456b;
+}
+
+
+#hero {
+    padding: 6rem 2rem;
+}
+
+.hero-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text span {
+    color: #007bff;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.hero-image img {
+    height: 280px;
+}
+
+
+#highlights {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+#highlights h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.highlight-grid {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.highlight-grid p {
+    background: #fff;
+    padding: 1rem;
+    border-left: 4px solid #007bff;
+}
+
+
+#believe {
+    padding: 5rem 2rem;
+}
+
+#believe h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.believe-cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+#high-lights {
+    margin-top: 5rem;
+}
+
+.highlights-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.highlights-grid {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+}
+
+.highlights-grid p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+#believe {
+    margin-top: 5rem;
+}
+
+.believe-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.believe-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.believe-card {
+    text-align: center;
+    max-width: 18rem;
+    margin: auto;
+}
+
+.believe-card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.offset {
+    transform: translateY(2rem);
+}
+
+
+#ceo-msg {
+    margin-top: 5rem;
+}
+
+.ceo-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ceo-greeting {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.ceo-greeting p {
+    margin-top: 0.5rem;
+}
+
+.ceo-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.ceo-quote {
+    max-width: 350px;
+}
+
+.ceo-quote  p{
+    margin-left: 4rem;
+}
+
+.ceo-quote i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: 2.5rem;
+}
+
+.ceo-quote cite {
+    font-size: 2rem;
+    font-style: normal;
+}
+
+.ceo-messages {
+    max-width: 500px;
+}
+
+.ceo-messages p {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+
+
+#ceo-desk {
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.ceo-main-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 9rem;
+}
+
+.ceo-intro {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+.ceo-intro > p {
+    margin-top: 1rem;
+}
+
+.ceo-layout {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+
+.ceo-quote {
+    width: 42rem;
+    transform: translateX(1rem);
+}
+
+.ceo-quote i {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.ceo-quote p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+.ceo-points {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 34rem;
+    margin-left: 13rem;
+}
+
+.point {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.point i {
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+}
+
+.point p {
+    font-size: 1rem;
+    line-height: 1.6;
+    transform: translateY(-1rem);
+}
+
+.ngo h1{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.ngo-img img{
+    margin-left: 19rem;
+    margin-top: 2rem;
+    width: 44rem;
+    height: 26rem;
+    border-radius: .5rem;
+}
+
+#about-ceo {
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+
+.about-ceo-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 3.5rem;
+    align-items: flex-start;
+}
+
+
+.ceo-image {
+    flex-shrink: 0;
+}
+
+.ceo-image img {
+    width: 360px;
+    height: auto;
+    display: block;
+    margin-left: 3rem;
+}
+
+
+.ceo-info {
+    max-width: 720px;
+}
+
+.ceo-text {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+}
+
+
+.ceo-name {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.ceo-role {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.ceo-socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.ceo-socials a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+#footer {
+    margin-top: 5rem;
+    font-size: 0.85rem;
+    padding-left: 7rem;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.dmca {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.dmca-tag {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    background: #94c441;
+    color: white;
+}
+
+.protected-tag {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    background: black;
+    color: white;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-links h4 {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0.4rem;
+}
+
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.4rem;
+}
+
+
+.fa-linkedin { color: #0A66C2; }
+.fa-youtube { color: #FF0000; }
+.fa-facebook { color: #1877F2; }
+.fa-instagram { color: #E1306C; }
+.fa-x-twitter { color: #000000; }
+
+.address-head {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.address p {
+    max-width: 22rem;
+    line-height: 1.5;
+}
+
